@@ -42,7 +42,7 @@ public class WebController {
     @ResponseBody
     public Object logout(HttpServletRequest request) {
         HttpSession session = request.getSession();
-        session.removeAttribute(USER);
+        session.invalidate();
         return true;
     }
 
