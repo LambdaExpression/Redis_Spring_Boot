@@ -1,2 +1,2 @@
 # Redis_Spring_Boot
-Spring Boot Starter Redis Model
+Spring Boot 整合 Redis 模板
