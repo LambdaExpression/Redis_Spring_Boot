@@ -25,5 +25,7 @@ public class RedisTest {
         // 30s后过时
         stringRedisTemplate.opsForValue().set("aaa", "111", 30, TimeUnit.SECONDS);
         System.out.println(stringRedisTemplate.opsForValue().get("aaa"));
+        //正则
+        System.out.println(stringRedisTemplate.opsForValue().getOperations().keys("a*"));
     }
 }
